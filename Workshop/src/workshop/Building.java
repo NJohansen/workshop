@@ -15,7 +15,7 @@ public class Building {
     private Location location;
 
     public Building() {
-        this.name = null;
+        this.name=null;
         this.location = null;
     }
 
