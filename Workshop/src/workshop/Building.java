@@ -10,7 +10,6 @@ package workshop;
  * @author niclasjohansen
  */
 public class Building {
-    
 
     public String name;
     private Location location;

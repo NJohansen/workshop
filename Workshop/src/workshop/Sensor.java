@@ -12,14 +12,14 @@ import java.util.ArrayList;
  * @author niclasjohansen
  */
 public class Sensor {
+
     private int data;
     private ArrayList<Measurement> measurement = new ArrayList<>();
     private int unit;
-    private int limit; 
-    
-            
-    public int getData(int data){
-        return this.data = data;     
+    private int limit;
+
+    public int getData(int data) {
+        return this.data = data;
     }
 
     public ArrayList<Measurement> getMeasurement() {
@@ -33,6 +33,5 @@ public class Sensor {
     public void setLimit(int limit) {
         this.limit = limit;
     }
-    
-    
+
 }

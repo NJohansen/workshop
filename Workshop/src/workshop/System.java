@@ -11,11 +11,11 @@ package workshop;
  */
 public class System {
 
-    public void addBuilding(){
-    
+    public void addBuilding() {
+
     }
-    
-    public void delBuilding(){
-    
+
+    public void delBuilding() {
+
     }
 }
