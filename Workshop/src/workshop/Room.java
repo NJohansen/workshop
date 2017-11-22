@@ -9,13 +9,6 @@ package workshop;
  *
  * @author niclasjohansen
  */
-public class Workshop {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class Room {
     
 }
