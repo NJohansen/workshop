@@ -10,9 +10,10 @@ package workshop;
  * @author niclasjohansen
  */
 public class System {
+    
+    private 
 
     public void addBuilding() {
-
     }
 
     public void delBuilding() {
