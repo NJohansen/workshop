@@ -5,17 +5,22 @@
  */
 package workshop;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author niclasjohansen
  */
 public class System {
-
-    public void addBuilding() {
-
+    public Building building;
+    public ArrayList<String> buildings = new ArrayList<String>();
+    
+    public void addBuilding(String name) {
+        buildings.add(name);
     }
-
-    public void delBuilding() {
-
+  
+    public void delBuilding(String name) {
+        buildings.remove(name);
     }
+    
 }

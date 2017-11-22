@@ -14,6 +14,8 @@ import java.util.ArrayList;
 public class Room {
 
     public String name;
+    public Sensor sensor;
+    public Room room;
     public ArrayList<String> rooms = new ArrayList<String>();
 
     public Room() {
@@ -36,8 +38,9 @@ public class Room {
         return this.name = name;
     }
 
-    public void addSensor() {
-
+    public void addSensorToRoom(Sensor sensor, Room room) {
+        this.sensor = sensor;
+        this.room = room;
     }
 
 }
