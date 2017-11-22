@@ -16,8 +16,15 @@ public class Sensor {
     private ArrayList<Measurement> measurement = new ArrayList<>();
     private int unit;
     private int limit; 
+    private Room room;
     
+     
+    public Sensor(int unit, Room room){
+        this.unit = unit;
+        this.room = room;
+    }
             
+    
     public int getData(int data){
         return this.data = data;     
     }
