@@ -5,6 +5,8 @@
  */
 package workshop;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author niclasjohansen
@@ -14,11 +16,12 @@ public class Location {
     private double x;
     private double y;
     private String city;
+    private ArrayList<String> cities = new ArrayList<String>(); 
 
     public Location() {
-        this.x = 0;
-        this.y = 0;
-        this.city = null;
+        this.x = Math.random()*100;
+        this.y = Math.random()*100;
+        this.city =null;
     }
 
     public Location(double x, double y) {

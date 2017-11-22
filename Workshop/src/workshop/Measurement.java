@@ -15,8 +15,8 @@ public class Measurement {
     public double value;
 
     public Measurement() {
-        this.timestamp = 0;
-        this.value = 0.0;
+        this.timestamp = (int)Math.random()*10;
+        this.value = Math.random()*10;
     }
 
     public Measurement(int timestamp, double value) {

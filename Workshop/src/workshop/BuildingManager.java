@@ -22,5 +22,9 @@ public class BuildingManager {
     public void delBuilding(Building building) {
         buildings.remove(building);
     }
+
+    public ArrayList<Building> getBuildings() {
+        return buildings;
+    }
     
 }

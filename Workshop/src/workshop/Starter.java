@@ -16,7 +16,11 @@ public class Starter {
 
 
     public static void main(String[] args) {
-     
+
+        BuildingManager system = new BuildingManager();
+        Building building = new Building("joes");
+        BuildingManager.addBuilding(building);
+           
         for (int i = 0; i < buildings.size(); i++) {
             System.out.println(buildings.get(i).getName());
         }
