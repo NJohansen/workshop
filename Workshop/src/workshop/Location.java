@@ -10,5 +10,7 @@ package workshop;
  * @author niclasjohansen
  */
 public class Location {
+    private int x;
+    private int y;
     
 }

@@ -10,5 +10,9 @@ package workshop;
  * @author niclasjohansen
  */
 public class Sensor {
+    private int data;
     
+    public int getData(int data){
+        return this.data = data;     
+    }
 }
