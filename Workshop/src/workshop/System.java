@@ -12,11 +12,12 @@ import java.util.ArrayList;
  * @author niclasjohansen
  */
 public class System {
+    
+    private 
 
     public ArrayList<Building> buildings = new ArrayList<Building>();
 
     public void addBuilding() {
-
     }
 
     public void delBuilding() {

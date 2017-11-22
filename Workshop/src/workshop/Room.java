@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class Room {
 
     public String name;
-    public ArrayList<String> rooms = new ArrayList<String>();
+    
 
     public Room() {
 
@@ -26,10 +26,6 @@ public class Room {
 
     public String getRoomName() {
         return name;
-    }
-
-    public ArrayList<String> getRooms() {
-        return rooms;
     }
 
     public String setRoomName(String name) {
