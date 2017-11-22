@@ -15,6 +15,6 @@ public class Starter {
         System system = new System();
         Building building = new Building("joes");
         system.addBuilding(building);
-        
+        system.
     }
 }
