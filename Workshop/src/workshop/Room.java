@@ -13,7 +13,9 @@ import java.util.ArrayList;
  */
 public class Room {
 
-    public String name;
+    private String name;
+    private int floor; 
+    
     
 
     public Room() {
@@ -35,5 +37,10 @@ public class Room {
     public void addSensor() {
 
     }
+
+    public int getFloor() {
+        return floor;
+    }
+    
 
 }

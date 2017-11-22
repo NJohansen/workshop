@@ -11,8 +11,7 @@ package workshop;
  */
 public class System {
     
-    private 
-
+      
     public void addBuilding() {
     }
 
