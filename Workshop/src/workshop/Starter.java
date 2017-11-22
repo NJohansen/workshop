@@ -21,8 +21,8 @@ public class Starter {
         BuildingManager system = new BuildingManager();
         Building building = new Building("joes");
         system.addBuilding(building);
-        String a = system.getBuildings().toString();
-        System.out.println(a);
+        Location location = system.getBuildings().get(0).getLocation();
+        System.out.println(location);
            
     }
 }
