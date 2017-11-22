@@ -10,6 +10,7 @@ package workshop;
  * @author niclasjohansen
  */
 public class Building {
+    
 
     public String name;
     private Location location;
@@ -49,4 +50,5 @@ public class Building {
     public void setLocation(Location location) {
         this.location = location;
     }
+
 }

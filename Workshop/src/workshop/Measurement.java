@@ -10,5 +10,7 @@ package workshop;
  * @author niclasjohansen
  */
 public class Measurement {
+    public double timestamp;
+    public double value;
     
 }
