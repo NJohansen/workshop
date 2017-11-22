@@ -12,6 +12,7 @@ import java.util.ArrayList;
  * @author niclasjohansen
  */
 public class System {
+
     public ArrayList<Building> buildings = new ArrayList<Building>();
     
     public void addBuilding(Building building) {

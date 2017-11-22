@@ -5,19 +5,18 @@
  */
 package workshop;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author niclasjohansen
  */
 public class Room {
 
+
     public String name;
     public Sensor sensor;
     public Room room;
-    public ArrayList<String> rooms = new ArrayList<String>();
-
+    private int floor; 
+    
 
     public Room() {
 
@@ -39,5 +38,10 @@ public class Room {
         this.sensor = sensor;
         this.room = room;
     }
+
+    public int getFloor() {
+        return floor;
+    }
+    
 
 }
