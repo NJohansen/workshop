@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author niclasjohansen
  */
-public class System {
+public class BuildingManager {
 
     public ArrayList<Building> buildings = new ArrayList<Building>();
     

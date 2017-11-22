@@ -5,13 +5,20 @@
  */
 package workshop;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author niclasjohansen
  */
 public class Starter {
+    public static ArrayList<Building> buildings;
+
 
     public static void main(String[] args) {
-   
+     
+        for (int i = 0; i < buildings.size(); i++) {
+            System.out.println(buildings.get(i).getName());
+        }
     }
 }
