@@ -10,14 +10,43 @@ package workshop;
  * @author niclasjohansen
  */
 public class Building {
-    String name;
-    
-    
-    
-    
-    
-    public Building(String name){
-        this.name=name;
+
+    public String name;
+    private Location location;
+
+    public Building() {
+        this.name = null;
+        this.location = null;
     }
-    
+
+    public Building(String name) {
+        this.name = name;
+        this.location = null;
+    }
+
+    public Building(Location location) {
+        this.location = location;
+        this.name = null;
+    }
+
+    public Building(String name, Location location) {
+        this.name = name;
+        this.location = location;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
 }
