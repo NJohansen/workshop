@@ -54,8 +54,11 @@ public class Building {
         this.location = location;
     }
 
-    public ArrayList<String> getBuildings() {
-        return buildings;
+    public void addRoom(Room room) {
+        this.rooms.add(room);
     }
 
+    public void delRoom(Room room) {
+        this.rooms.remove(room);
+    }
 }
