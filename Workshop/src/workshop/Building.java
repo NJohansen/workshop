@@ -15,10 +15,10 @@ public class Building {
 
     public String name;
     private Location location;
-    public ArrayList<String> rooms = new ArrayList<String>();
+    public ArrayList<String> buildings = new ArrayList<String>();
 
     public Building() {
-        this.name=null;
+        this.name = null;
         this.location = null;
     }
 
@@ -52,7 +52,9 @@ public class Building {
     public void setLocation(Location location) {
         this.location = location;
     }
-    public ArrayList<String> getRooms() {
-        return rooms;
+
+    public ArrayList<String> getBuildings() {
+        return buildings;
     }
+
 }
