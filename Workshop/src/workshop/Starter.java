@@ -5,24 +5,27 @@
  */
 package workshop;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author niclasjohansen
  */
 public class Starter {
-    public static ArrayList<Building> buildings;
+
 
 
     public static void main(String[] args) {
 
-       
         BuildingManager system = new BuildingManager();
-        Building building = new Building("joes");
-        system.addBuilding(building);
-        String a = system.getBuildings().toString();
-        System.out.println(a);
-           
+
+        system.addBuilding(new Building("Bygning 0"));
+        system.addBuilding(new Building("Bygning 1"));
+        system.addBuilding(new Building("Bygning 2"));
+        system.addBuilding(new Building("Bygning 3"));
+        system.addBuilding(new Building("Bygning 4"));
+        system.addBuilding(new Building("Bygning 5"));
+        
+        for (int i = 0; i < system.getBuildings().size(); i++) {
+            System.out.println(system.getBuildings().get(i).getName());
+        }
     }
 }
