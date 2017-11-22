@@ -18,7 +18,7 @@ public class Building {
     public ArrayList<String> rooms = new ArrayList<String>();
 
     public Building() {
-        this.name = null;
+        this.name=null;
         this.location = null;
     }
 
