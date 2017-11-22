@@ -24,7 +24,7 @@ public class Starter {
 
         for (int i = 0; i < system.getBuildings().size(); i++) {
             System.out.println("Building name: " + system.getBuildings().get(i).getName());
-            System.out.println("Building location: " + system.getBuildings().get(i).getLocation());
+            System.out.println("Building location: " + system.getBuildings().get(i).getLocation() + "\n");
         }
 
         Location location = system.getBuildings().get(0).getLocation();

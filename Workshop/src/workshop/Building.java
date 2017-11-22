@@ -14,8 +14,9 @@ import java.util.ArrayList;
 public class Building {
 
     public String name;
+    public int amountOfRooms = 0;
     private Location location;
-    public ArrayList<String> buildings = new ArrayList<String>();
+    public ArrayList<Room> rooms = new ArrayList<Room>();
 
     public Building() {
         this.name = null;
