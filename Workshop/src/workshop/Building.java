@@ -16,6 +16,7 @@ public class Building {
     public String name;
     public int amountOfRooms = 0;
     private Location location;
+    private Measurement measurement;
     public ArrayList<Room> rooms = new ArrayList<Room>();
 
     public Building() {
@@ -33,9 +34,10 @@ public class Building {
         this.name = null;
     }
 
-    public Building(String name, Location location) {
+    public Building(String name, Location location, Measurement measurement) {
         this.name = name;
         this.location = location;
+        this.measurement = measurement;
     }
 
     public String getName() {
@@ -54,6 +56,14 @@ public class Building {
         this.location = location;
     }
 
+    public void setMeasurement(Measurement measurement) {
+        this.measurement = measurement;
+    }
+
+    public Measurement getMeasurement() {
+        return measurement;
+    }
+
     public void addRoom(Room room) {
         this.rooms.add(room);
     }
@@ -61,4 +71,6 @@ public class Building {
     public void delRoom(Room room) {
         this.rooms.remove(room);
     }
+    
+    
 }

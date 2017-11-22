@@ -33,4 +33,8 @@ public class Measurement {
         this.timestamp = timestamp;
         this.value = 0.0;
     }
+    
+    public void setMeasurement(double value){
+        this.value = value;
+    }
 }
