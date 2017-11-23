@@ -14,9 +14,13 @@ import java.util.ArrayList;
 public class BuildingManager {
 
     public ArrayList<Building> buildings = new ArrayList<Building>();
+    public Building building;
     
     public void addBuilding(Building building) {
         buildings.add(building);
+    }
+    public void addBuilding(){
+        buildings.add(building= new Building());
     }
   
     public void delBuilding(Building building) {

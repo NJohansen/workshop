@@ -20,8 +20,9 @@ public class Building {
     public ArrayList<Room> rooms = new ArrayList<Room>();
 
     public Building() {
-        this.name = null;
-        this.location = null;
+        this.name = "test";
+        this.location = new Location();
+        this.measurement = new Measurement();
     }
 
     public Building(String name) {
