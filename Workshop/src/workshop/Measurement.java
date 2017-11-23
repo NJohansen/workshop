@@ -16,9 +16,9 @@ public class Measurement {
     public double temp;
 
     public Measurement() {
-        this.timestamp = ((int)Math.random()*10);
-        this.value = Math.round((Math.random()*10.)*100.)/100.;
-        this.temp = Math.round((Math.random()*100.)*100.)/100.;
+        this.timestamp = ((int) Math.random() * 10);
+        this.value = Math.round((Math.random() * 10.) * 100.) / 100.;
+        this.temp = Math.round((Math.random() * 100.) * 100.) / 100.;
     }
 
     public Measurement(int timestamp, double value, double temp) {
@@ -38,8 +38,15 @@ public class Measurement {
         this.value = 0.0;
         this.temp = 0.0;
     }
-    
-    public void setMeasurement(double value){
+
+    public void setMeasurement(int timestamp, double value, double temp) {
+        this.timestamp = timestamp;
         this.value = value;
+        this.temp = temp;
+    }
+
+    public void setMeasurement(double value, double temp) {
+        this.value = value;
+        this.temp = temp;
     }
 }

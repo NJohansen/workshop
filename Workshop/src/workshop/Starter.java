@@ -15,22 +15,16 @@ public class Starter {
 
         BuildingManager program = new BuildingManager();
 
-        program.addBuilding(new Building("Bygning 0"));
-        program.getBuildings().get(0).setMeasurement(new Measurement());
-        program.addBuilding(new Building("Bygning 1"));
-        program.getBuildings().get(1).setMeasurement(new Measurement());
-        program.addBuilding(new Building("Bygning 2"));
-        program.getBuildings().get(2).setMeasurement(new Measurement());
-        program.addBuilding(new Building("Bygning 3"));
-        program.getBuildings().get(3).setMeasurement(new Measurement());
-        program.addBuilding(new Building("Bygning 4"));
-        program.getBuildings().get(4).setMeasurement(new Measurement());
-        program.addBuilding(new Building("Bygning 5"));
-        program.getBuildings().get(5).setMeasurement(new Measurement());
+        program.addBuilding(new Building());
+        program.addBuilding(new Building());
+        program.addBuilding(new Building());
+        program.addBuilding(new Building());
+        program.addBuilding(new Building());
+        program.addBuilding(new Building());
 
         for (int i = 0; i < program.getBuildings().size(); i++) {
             System.out.println("Building name: " + program.getBuildings().get(i).getName());
-            System.out.println("Building location: " + program.getBuildings().get(i).getLocation());
+            System.out.println("Building location: " + program.getBuildings().get(i).getLocation().getLocationCity());
             System.out.println("Measurement: " + program.getBuildings().get(i).getMeasurement().value);
             System.out.println("Measurement: " + program.getBuildings().get(i).getMeasurement().temp + "\n");
 
