@@ -15,18 +15,18 @@ public class Starter {
 
         BuildingManager program = new BuildingManager();
 
-        program.addBuilding(new Building());
-        program.addBuilding(new Building());
-        program.addBuilding(new Building());
-        program.addBuilding(new Building());
-        program.addBuilding(new Building());
+        program.addBuilding();
+        program.addBuilding();
+        program.addBuilding();
+        program.addBuilding();
+        program.addBuilding();
         program.addBuilding(new Building());
 
         for (int i = 0; i < program.getBuildings().size(); i++) {
             System.out.println("Building name: " + program.getBuildings().get(i).getName());
-            System.out.println("Building location: " + program.getBuildings().get(i).getLocation().getLocationCity());
-            System.out.println("Measurement: " + program.getBuildings().get(i).getMeasurement().value);
-            System.out.println("Measurement: " + program.getBuildings().get(i).getMeasurement().temp + "\n");
+            System.out.println(program.getBuildings().get(i).getLocation().printAll());
+            System.out.println("Value of Sensors: " + program.getBuildings().get(i).getMeasurement().value);
+            System.out.println("Temperature of Sensors: " + program.getBuildings().get(i).getMeasurement().temp + "\n");
 
         }
 

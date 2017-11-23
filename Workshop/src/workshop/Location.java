@@ -17,13 +17,11 @@ public class Location {
     private double y;
     private String city;
     private ArrayList<String> cities = new ArrayList<String>();
-    
-    
 
     public Location() {
-        this.x = Math.round(Math.random()*100)/100.;
-        this.y = Math.round(Math.random()*100)/100.;
-        this.city ="test";
+        this.x = Math.round(Math.random() * 100) / 100.;
+        this.y = Math.round(Math.random() * 100) / 100.;
+        this.city = "test";
     }
 
     public Location(double x, double y) {
@@ -37,14 +35,13 @@ public class Location {
         this.y = 0;
         this.city = city;
     }
-    
 
     public Location(double x, double y, String city) {
         this.x = x;
         this.y = y;
         this.city = city;
     }
-    
+
     public double getLocationX() {
         return x;
     }
@@ -55,5 +52,10 @@ public class Location {
 
     public String getLocationCity() {
         return city;
+    }
+
+    public String printAll() {
+        String s = "City: " + city + "\nX: " + x + " Y: " + y;
+        return s;
     }
 }
