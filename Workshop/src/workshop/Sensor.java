@@ -14,30 +14,28 @@ import java.util.ArrayList;
 public class Sensor {
 
     private int data;
-    private ArrayList<Measurement> measurement = new ArrayList<>();
-    private int unit;
-    private int limit; 
-    private Room room;
-    
-     
-    public Sensor(int unit, Room room){
-        this.unit = unit;
-        this.room = room;
-    }
-            
-    
-    public int getData(int data){
-        return this.data = data;     
+    private int limit;
+    private Measurement measurements;
 
+    public Sensor(int data, int limit) {
+        this.data = data;
+        this.limit = limit;
     }
 
-    public ArrayList<Measurement> getMeasurement() {
-        return measurement;
+    Sensor() {
+        this.data = (int) Math.random() * 100;
+        this.limit= (int) Math.random() *10;
+        this.measurements= new Measurement();
     }
 
-    public void setUnit(int unit) {
-        this.unit = unit;
+    public int getData(int data) {
+        return this.data = data;
+
     }
+    public Measurement getMeasurement() {
+        return measurements;
+    }
+
 
     public void setLimit(int limit) {
         this.limit = limit;

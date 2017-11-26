@@ -25,8 +25,8 @@ public class Starter {
         for (int i = 0; i < program.getBuildings().size(); i++) {
             System.out.println("Building name: " + program.getBuildings().get(i).getName());
             System.out.println(program.getBuildings().get(i).getLocation().printAll());
-            System.out.println("Value of Sensors: " + program.getBuildings().get(i).getMeasurement().value);
-            System.out.println("Temperature of Sensors: " + program.getBuildings().get(i).getMeasurement().temp + "\n");
+//            System.out.println("Value of Sensors: " + program.getBuildings().get(i).getMeasurement().value);
+//            System.out.println("Temperature of Sensors: " + program.getBuildings().get(i).getMeasurement().temp + "\n");
 
         }
 
@@ -34,12 +34,12 @@ public class Starter {
         Building building = new Building("Joes");
         program2.addBuilding(building);
         Location location2 = new Location("City of Soren");
-        program2.getBuildings().get(0).setMeasurement(new Measurement(2.2, 2.2));
+//        program2.getBuildings().get(0).setMeasurement(new Measurement(2.2, 2.2));
         program2.getBuildings().get(0).setLocation(location2);
         String a = program2.getBuildings().get(0).getName();
         String b = program2.getBuildings().get(0).getLocation().getLocationCity();
 
-        System.out.println("Building name: " + a + " \nBuilding Location: " + b + " " + program2.getBuildings().get(0).getMeasurement().value);
+//        System.out.println("Building name: " + a + " \nBuilding Location: " + b + " " + program2.getBuildings().get(0).getMeasurement().value);
 
     }
 }

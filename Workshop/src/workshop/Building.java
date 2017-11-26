@@ -13,16 +13,30 @@ import java.util.ArrayList;
  */
 public class Building {
 
-    public String name;
-    public int amountOfRooms = 0;
+    private String name;
+    private int amountOfRooms = 0;
     private Location location;
-    private Measurement measurement;
-    public ArrayList<Room> rooms = new ArrayList<Room>();
+    private ArrayList<Room> rooms = new ArrayList<Room>();
+    private Room room1;
+    private Room room2;
+    private Room room3;
+    private Room room4;
+    private Room room5;
 
     public Building() {
         this.name = "test";
         this.location = new Location();
-        this.measurement = new Measurement();
+        this.room1 = new Room();
+        this.room2 = new Room();
+        this.room3 = new Room();
+        this.room4 = new Room();
+        this.room5 = new Room();
+        this.rooms.add(room1);
+        this.rooms.add(room2);
+        this.rooms.add(room3);
+        this.rooms.add(room4);
+        this.rooms.add(room5);
+
     }
 
     public Building(String name) {
@@ -35,10 +49,9 @@ public class Building {
         this.name = null;
     }
 
-    public Building(String name, Location location, Measurement measurement) {
+    public Building(String name, Location location) {
         this.name = name;
         this.location = location;
-        this.measurement = measurement;
     }
 
     public String getName() {
@@ -57,14 +70,6 @@ public class Building {
         this.location = location;
     }
 
-    public void setMeasurement(Measurement measurement) {
-        this.measurement = measurement;
-    }
-
-    public Measurement getMeasurement() {
-        return measurement;
-    }
-
     public void addRoom(Room room) {
         this.rooms.add(room);
     }
@@ -72,6 +77,5 @@ public class Building {
     public void delRoom(Room room) {
         this.rooms.remove(room);
     }
-    
-    
+
 }
