@@ -77,7 +77,8 @@ public class Building {
     public void delRoom(Room room) {
         this.rooms.remove(room);
     }
-    public ArrayList<Room> getRoomList(){
+
+    public ArrayList<Room> getRoomList() {
         return rooms;
     }
 
