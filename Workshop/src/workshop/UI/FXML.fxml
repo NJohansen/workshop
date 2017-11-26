@@ -66,7 +66,7 @@
                   </Label>
                </children>
             </StackPane>
-            <ListView prefHeight="500.0">
+            <ListView fx:id="buildingList" prefHeight="500.0">
                <opaqueInsets>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </opaqueInsets>
@@ -88,7 +88,7 @@
                   </Label>
                </children>
             </StackPane>
-            <ListView prefHeight="500.0">
+            <ListView fx:id="roomList" prefHeight="500.0">
                <opaqueInsets>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </opaqueInsets>

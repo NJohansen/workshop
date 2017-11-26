@@ -25,7 +25,7 @@ public class UI extends Application {
         
         Scene scene = new Scene(root);
         
-        primaryStage.setTitle("Hello World!");
+        primaryStage.setTitle("Sensor system");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
