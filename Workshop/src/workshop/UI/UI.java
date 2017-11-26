@@ -5,6 +5,7 @@
  */
 package workshop.UI;
 
+import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -18,11 +19,11 @@ import javafx.stage.Stage;
 public class UI extends Application {
     
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("FXML.fxml"));
         
         
-        Scene scene = new Scene(root, 300, 250);
+        Scene scene = new Scene(root);
         
         primaryStage.setTitle("Hello World!");
         primaryStage.setScene(scene);

@@ -20,7 +20,7 @@ public class Starter {
         program.addBuilding();
         program.addBuilding();
         program.addBuilding();
-        program.addBuilding(new Building());
+        program.addBuilding();
 
         for (int i = 0; i < program.getBuildings().size(); i++) {
             System.out.println("Building name: " + program.getBuildings().get(i).getName());

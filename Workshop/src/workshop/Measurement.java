@@ -48,5 +48,6 @@ public class Measurement {
     public void setMeasurement(double value, double temp) {
         this.value = value;
         this.temp = temp;
+        this.timestamp=timestamp;
     }
 }
