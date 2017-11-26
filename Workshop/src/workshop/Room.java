@@ -11,20 +11,20 @@ package workshop;
  */
 public class Room {
 
-
     public String name;
     public Sensor sensor;
-    private int floor; 
-    
+    private int floor;
 
     public Room() {
-        this.name="testRoom";
-        this.sensor=new Sensor();
-        this.floor= (int)Math.random()*10;
+        this.name = "testRoom";
+        this.sensor = new Sensor();
+        this.floor = (int) Math.random() * 10;
     }
 
     public Room(String name) {
         this.name = name;
+        this.sensor = new Sensor();
+        this.floor = (int) Math.random() * 10;
     }
 
     public String getRoomName() {
@@ -42,6 +42,5 @@ public class Room {
     public int getFloor() {
         return floor;
     }
-    
 
 }
