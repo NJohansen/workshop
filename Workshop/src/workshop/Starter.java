@@ -21,6 +21,7 @@ public class Starter {
         program.addBuilding();
         program.addBuilding();
         program.addBuilding();
+        System.out.println(program.buildings.get(0).getRoomList().toString());
 
         for (int i = 0; i < program.getBuildings().size(); i++) {
             System.out.println("Building name: " + program.getBuildings().get(i).getName());

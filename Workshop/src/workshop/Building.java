@@ -26,11 +26,11 @@ public class Building {
     public Building() {
         this.name = "test";
         this.location = new Location();
-        this.room1 = new Room();
-        this.room2 = new Room();
+        this.room1 = new Room("Hospital");
+        this.room2 = new Room("SDU");
         this.room3 = new Room();
-        this.room4 = new Room();
-        this.room5 = new Room();
+        this.room4 = new Room("Securitas");
+        this.room5 = new Room("Bathesda");
         this.rooms.add(room1);
         this.rooms.add(room2);
         this.rooms.add(room3);
