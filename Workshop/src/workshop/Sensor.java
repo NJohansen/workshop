@@ -16,18 +16,20 @@ public class Sensor {
     private int data;
     private ArrayList<Measurement> measurement = new ArrayList<>();
     private int unit;
-    private int limit; 
-    private Room room;
-    
-     
-    public Sensor(int unit, Room room){
+    private int limit;
+
+    public Sensor(int unit, int data, int limit) {
         this.unit = unit;
-        this.room = room;
+        this.data = data;
+        this.limit = limit;
     }
-            
-    
-    public int getData(int data){
-        return this.data = data;     
+
+    Sensor() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public int getData(int data) {
+        return this.data = data;
 
     }
 

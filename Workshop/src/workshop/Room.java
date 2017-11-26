@@ -14,12 +14,12 @@ public class Room {
 
     public String name;
     public Sensor sensor;
-    public Room room;
     private int floor; 
     
 
     public Room() {
-
+        this.name="testRoom";
+        this.sensor=new Sensor();
     }
 
     public Room(String name) {
@@ -34,9 +34,8 @@ public class Room {
         return this.name = name;
     }
 
-    public void addSensorToRoom(Sensor sensor, Room room) {
+    public void addSensorToRoom(Sensor sensor) {
         this.sensor = sensor;
-        this.room = room;
     }
 
     public int getFloor() {

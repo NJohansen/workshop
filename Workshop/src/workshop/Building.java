@@ -13,11 +13,12 @@ import java.util.ArrayList;
  */
 public class Building {
 
-    public String name;
-    public int amountOfRooms = 0;
+    private String name;
+    private int amountOfRooms = 0;
     private Location location;
     private Measurement measurement;
-    public ArrayList<Room> rooms = new ArrayList<Room>();
+    private ArrayList<Room> rooms = new ArrayList<Room>();
+    private Room room = new Room();
 
     public Building() {
         this.name = "test";
