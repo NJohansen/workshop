@@ -17,13 +17,25 @@ public class Building {
     private int amountOfRooms = 0;
     private Location location;
     private ArrayList<Room> rooms = new ArrayList<Room>();
-    private Room room = new Room();
+    private Room room1;
+    private Room room2;
+    private Room room3;
+    private Room room4;
+    private Room room5;
 
     public Building() {
         this.name = "test";
         this.location = new Location();
-        
-        this.room = new Room();
+        this.room1 = new Room();
+        this.room2 = new Room();
+        this.room3 = new Room();
+        this.room4 = new Room();
+        this.room5 = new Room();
+        this.rooms.add(room1);
+        this.rooms.add(room2);
+        this.rooms.add(room3);
+        this.rooms.add(room4);
+        this.rooms.add(room5);
 
     }
 
@@ -58,8 +70,6 @@ public class Building {
         this.location = location;
     }
 
-
-
     public void addRoom(Room room) {
         this.rooms.add(room);
     }
@@ -67,6 +77,5 @@ public class Building {
     public void delRoom(Room room) {
         this.rooms.remove(room);
     }
-    
-    
+
 }

@@ -20,6 +20,7 @@ public class Room {
     public Room() {
         this.name="testRoom";
         this.sensor=new Sensor();
+        this.floor= (int)Math.random()*10;
     }
 
     public Room(String name) {

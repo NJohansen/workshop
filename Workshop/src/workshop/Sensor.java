@@ -14,32 +14,28 @@ import java.util.ArrayList;
 public class Sensor {
 
     private int data;
-    private ArrayList<Measurement> measurement = new ArrayList<>();
-    private int unit;
     private int limit;
+    private Measurement measurements;
 
-    public Sensor(int unit, int data, int limit) {
-        this.unit = unit;
+    public Sensor(int data, int limit) {
         this.data = data;
         this.limit = limit;
     }
 
     Sensor() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.data = (int) Math.random() * 100;
+        this.limit= (int) Math.random() *10;
+        this.measurements= new Measurement();
     }
 
     public int getData(int data) {
         return this.data = data;
 
     }
-
-    public ArrayList<Measurement> getMeasurement() {
-        return measurement;
+    public Measurement getMeasurement() {
+        return measurements;
     }
 
-    public void setUnit(int unit) {
-        this.unit = unit;
-    }
 
     public void setLimit(int limit) {
         this.limit = limit;
