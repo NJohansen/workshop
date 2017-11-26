@@ -26,9 +26,10 @@ public class Building {
     public Building() {
         this.name = "test";
         this.location = new Location();
+
+        this.room3 = new Room();
         this.room1 = new Room("Hospital");
         this.room2 = new Room("SDU");
-        this.room3 = new Room();
         this.room4 = new Room("Securitas");
         this.room5 = new Room("Bathesda");
         this.rooms.add(room1);
@@ -46,7 +47,7 @@ public class Building {
 
     public Building(Location location) {
         this.location = location;
-        this.name = null;
+        this.name = "unnammed Building";
     }
 
     public Building(String name, Location location) {

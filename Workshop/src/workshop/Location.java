@@ -16,23 +16,22 @@ public class Location {
     private double x;
     private double y;
     private String city;
-    private ArrayList<String> cities = new ArrayList<String>();
 
     public Location() {
         this.x = Math.round(Math.random() * 100) / 100.;
         this.y = Math.round(Math.random() * 100) / 100.;
-        this.city = "test";
+        this.city = "Unnammed City";
     }
 
     public Location(double x, double y) {
         this.x = x;
         this.y = y;
-        this.city = null;
+        this.city = "No Name";
     }
 
     public Location(String city) {
-        this.x = 0;
-        this.y = 0;
+        this.x = Math.round(Math.random() * 100) / 100.;
+        this.y = Math.round(Math.random() * 100) / 100.;
         this.city = city;
     }
 

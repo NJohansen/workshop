@@ -21,7 +21,7 @@ public class Measurement {
         this.temp = Math.round((Math.random() * 100.) * 100.) / 100.;
     }
 
-    public Measurement(int timestamp, double value, double temp) {
+    public Measurement( double value, double temp,int timestamp) {
         this.timestamp = timestamp;
         this.value = value;
         this.temp = temp;

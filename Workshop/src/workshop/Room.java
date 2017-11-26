@@ -5,26 +5,27 @@
  */
 package workshop;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author niclasjohansen
  */
 public class Room {
 
-    public String name;
-    public Sensor sensor;
-    private int floor;
+    private String name;
+    private Sensor sensor;
+    private ArrayList<Sensor> sensors = new ArrayList<>();
 
     public Room() {
-        this.name = "testRoom";
+        this.name = "Unnammed Room";
         this.sensor = new Sensor();
-        this.floor = (int) Math.random() * 10;
+        this.sensors.add(sensor);
     }
 
     public Room(String name) {
         this.name = name;
         this.sensor = new Sensor();
-        this.floor = (int) Math.random() * 10;
     }
 
     public String getRoomName() {
@@ -38,9 +39,7 @@ public class Room {
     public void addSensorToRoom(Sensor sensor) {
         this.sensor = sensor;
     }
-
-    public int getFloor() {
-        return floor;
+    public Sensor getSensor(){
+        return sensor;
     }
-
 }
