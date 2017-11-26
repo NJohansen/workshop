@@ -42,6 +42,7 @@ public class FXMLController implements Initializable {
     for(int i = 0; i < program.building.getRoomList().size(); i++){
     ObservableList<String> items =FXCollections.observableArrayList (program.building.getRoomList().get(i).getRoomName());
     roomList.setItems(items);
+    
     }
     
     

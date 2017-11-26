@@ -14,14 +14,14 @@ public class Starter {
     public static void main(String[] args) {
 
         BuildingManager program = new BuildingManager();
+        program.addBuilding();
+        program.addBuilding();
+        for (int i = 0; i < program.buildings.size(); i++) {
+            for (int j = 0; j < program.buildings.get(i).getRoomList().size(); j++) {
+                System.out.println(program.buildings.get(i).getRoomList().get(j).getRoomName());
+            }
+        }
 
-        program.addBuilding();
-        program.addBuilding();
-        program.addBuilding();
-        program.addBuilding();
-        program.addBuilding();
-        program.addBuilding();
-        System.out.println(program.buildings.get(0).getRoomList().toString());
 
         for (int i = 0; i < program.getBuildings().size(); i++) {
             System.out.println("Building name: " + program.getBuildings().get(i).getName());
@@ -41,6 +41,5 @@ public class Starter {
         String b = program2.getBuildings().get(0).getLocation().getLocationCity();
 
 //        System.out.println("Building name: " + a + " \nBuilding Location: " + b + " " + program2.getBuildings().get(0).getMeasurement().value);
-
     }
 }
