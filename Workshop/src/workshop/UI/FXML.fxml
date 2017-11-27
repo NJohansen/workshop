@@ -27,7 +27,7 @@
    <children>
       <TabPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE" GridPane.columnIndex="2">
         <tabs>
-          <Tab text="Graph">
+          <Tab fx:id="ShowTemp" text="Temperature">
                <content>
                   <LineChart>
                     <xAxis>

@@ -13,6 +13,7 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
+import javafx.scene.control.Tab;
 import workshop.BuildingManager;
 
 /**
@@ -26,6 +27,8 @@ public class FXMLController implements Initializable {
     private ListView<String> buildingList;
     @FXML
     private ListView<String> roomList;
+    @FXML
+    private Tab ShowTemp;
 
     /**
      * Initializes the controller class.
@@ -47,5 +50,6 @@ public class FXMLController implements Initializable {
         ObservableList<String> items = FXCollections.observableArrayList(roomnames);
         roomList.setItems(items);
     }
+    
     
 }
