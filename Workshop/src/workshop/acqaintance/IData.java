@@ -9,6 +9,6 @@ package workshop.acqaintance;
  *
  * @author niclasjohansen
  */
-public class IData {
+public interface IData {
     
 }

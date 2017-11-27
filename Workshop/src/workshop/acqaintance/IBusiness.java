@@ -9,6 +9,7 @@ package workshop.acqaintance;
  *
  * @author niclasjohansen
  */
-public class IBusiness {
+public interface IBusiness {
     
+   void getRoomNames();
 }

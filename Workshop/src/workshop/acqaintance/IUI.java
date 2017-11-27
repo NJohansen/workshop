@@ -9,6 +9,6 @@ package workshop.acqaintance;
  *
  * @author niclasjohansen
  */
-public class IUI {
+public interface IUI {
     
 }

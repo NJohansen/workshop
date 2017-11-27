@@ -5,17 +5,25 @@
  */
 package workshop.business;
 
+import workshop.acqaintance.IBusiness;
+
 /**
  *
  * @author niclasjohansen
  */
-public class BusinessFacade {
+public class BusinessFacade implements IBusiness {
     private BuildingManager buildingManager;
+    private Building building;
     
     /*
     * No-arg constructior
     */
     public BusinessFacade(){
         buildingManager = new BuildingManager();
+    }
+    
+    @Override
+    public void getRoomNames(){
+        building.getRoomNames();
     }
 }

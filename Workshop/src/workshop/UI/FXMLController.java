@@ -28,6 +28,7 @@ public class FXMLController implements Initializable {
     @FXML
     private ListView<String> roomList;
     private IBusiness ib;
+    private ArrayList<String> roomnames = new ArrayList<>();
 
     /**
      * Initializes the controller class.
@@ -42,7 +43,7 @@ public class FXMLController implements Initializable {
             ObservableList<String> items = FXCollections.observableArrayList(program.getBuildings().get(i).getName());
             buildingList.setItems(items);
         }
-        ArrayList<String> roomnames = new ArrayList<>();
+
         for (int i = 0; i < program.building.getRoomList().size(); i++) {
             String item = program.building.getRoomList().get(i).getRoomName();
             roomnames.add(item);

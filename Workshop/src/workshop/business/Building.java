@@ -17,6 +17,7 @@ public class Building {
     private int amountOfRooms = 0;
     private Location location;
     private ArrayList<Room> rooms = new ArrayList<Room>();
+    private ArrayList<String> roomnames = new ArrayList<>();
     private Room room1;
     private Room room2;
     private Room room3;
@@ -82,5 +83,15 @@ public class Building {
     public ArrayList<Room> getRoomList() {
         return rooms;
     }
+
+    public ArrayList<String> getRoomNames() {
+        for (int i = 0; i < getRoomList().size(); i++) {
+            String item = getRoomList().get(i).getRoomName();
+            roomnames.add(item);
+            
+        }
+        return roomnames;
+    }
+    ﬁ
 
 }
