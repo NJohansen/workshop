@@ -5,11 +5,14 @@
  */
 package workshop.acqaintance;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author niclasjohansen
  */
 public interface IBusiness {
-    
-   void getRoomNames();
+   void addBuilding();
+   ArrayList<String> getRoomNames();
+   void BuildingManager();
 }

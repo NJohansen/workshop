@@ -5,6 +5,7 @@
  */
 package workshop.business;
 
+import java.util.ArrayList;
 import workshop.acqaintance.IBusiness;
 
 /**
@@ -23,7 +24,17 @@ public class BusinessFacade implements IBusiness {
     }
     
     @Override
-    public void getRoomNames(){
-        building.getRoomNames();
+    public ArrayList<String> getRoomNames(){
+        return this.building.getRoomNames();
+    }
+
+    @Override
+    public void addBuilding() {
+        buildingManager.addBuilding();
+    }
+
+    @Override
+    public void BuildingManager() {
+        buildingManager=new BuildingManager();
     }
 }

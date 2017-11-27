@@ -22,34 +22,25 @@ import workshop.business.BuildingManager;
  * @author niclasjohansen
  */
 public class FXMLController implements Initializable {
-    
+
     @FXML
     private ListView<String> buildingList;
     @FXML
     private ListView<String> roomList;
     private IBusiness ib;
-    private ArrayList<String> roomnames = new ArrayList<>();
+    private ArrayList<String> roomnames;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        BuildingManager program = new BuildingManager();
-        program.addBuilding();
-        
-        
-        for (int i = 0; i < program.buildings.size(); i++) {
-            ObservableList<String> items = FXCollections.observableArrayList(program.getBuildings().get(i).getName());
-            buildingList.setItems(items);
-        }
+        this.ib.BuildingManager();
+        this.ib.addBuilding();
+        this.roomnames = ib.getRoomNames();
 
-        for (int i = 0; i < program.building.getRoomList().size(); i++) {
-            String item = program.building.getRoomList().get(i).getRoomName();
-            roomnames.add(item);
-        }
         ObservableList<String> items = FXCollections.observableArrayList(roomnames);
         roomList.setItems(items);
     }
-    
+
 }
