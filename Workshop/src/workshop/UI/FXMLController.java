@@ -13,6 +13,7 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
+import workshop.acqaintance.IBusiness;
 import workshop.business.BuildingManager;
 
 /**
@@ -26,6 +27,7 @@ public class FXMLController implements Initializable {
     private ListView<String> buildingList;
     @FXML
     private ListView<String> roomList;
+    private IBusiness ib;
 
     /**
      * Initializes the controller class.
@@ -34,6 +36,7 @@ public class FXMLController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         BuildingManager program = new BuildingManager();
         program.addBuilding();
+        
         
         for (int i = 0; i < program.buildings.size(); i++) {
             ObservableList<String> items = FXCollections.observableArrayList(program.getBuildings().get(i).getName());
