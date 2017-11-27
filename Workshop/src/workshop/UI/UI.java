@@ -32,12 +32,15 @@ public class UI extends Application implements IUI {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        launch(args);
+    
+    @Override
+    public void injectBusiness(IBusiness businessLayer){
+        business = businessLayer;
+    }
+    
+    @Override
+    public void startApplication(String[] args) {
+         launch(args);
     }
     
 }   

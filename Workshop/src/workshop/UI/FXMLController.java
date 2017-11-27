@@ -28,19 +28,18 @@ public class FXMLController implements Initializable {
     @FXML
     private ListView<String> roomList;
     private IBusiness ib;
-    private ArrayList<String> roomnames;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        this.ib.BuildingManager();
-        this.ib.addBuilding();
-        this.roomnames = ib.getRoomNames();
 
-        ObservableList<String> items = FXCollections.observableArrayList(roomnames);
-        roomList.setItems(items);
+        ObservableList<String> items = FXCollections.observableArrayList("Bygning1", "Bygning2");
+        buildingList.setItems(items);
+//
+//        ObservableList<String> items1 = FXCollections.observableArrayList(ib.getRoomNames().get(1));
+//        roomList.setItems(items1);
     }
 
 }

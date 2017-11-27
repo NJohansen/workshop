@@ -25,7 +25,7 @@ public class BusinessFacade implements IBusiness {
     
     @Override
     public ArrayList<String> getRoomNames(){
-        return this.building.getRoomNames();
+        return building.getRoomNames();
     }
 
     @Override
