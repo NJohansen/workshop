@@ -5,6 +5,7 @@
  */
 package workshop.business;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -15,6 +16,7 @@ public class BuildingManager {
 
     public ArrayList<Building> buildings = new ArrayList<Building>();
     public Building building;
+    private ArrayList<String> buildingsnames = new ArrayList<>();
     
     public void addBuilding(Building building) {
         buildings.add(building);
@@ -29,9 +31,20 @@ public class BuildingManager {
     public void delBuilding(int i){
         buildings.remove(i);
     }
-
     public ArrayList<Building> getBuildings() {
         return buildings;
     }
+    public ArrayList<String> getBuildingsNames() {
+        for (int i = 0; i < getBuildings().size(); i++) {
+            String item = getBuildings().get(i).getName();
+            buildingsnames.add(item);
+            
+        }
+        return buildingsnames;
+        
+    }
     
+   
 }
+    
+

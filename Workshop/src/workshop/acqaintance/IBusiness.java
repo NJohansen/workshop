@@ -15,4 +15,5 @@ public interface IBusiness {
    void addBuilding();
    ArrayList<String> getRoomNames();
    void BuildingManager();
-}
+    ArrayList<String> getBuildings();
+ }

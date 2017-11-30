@@ -29,10 +29,10 @@ public class Building {
         this.location = new Location();
 
         this.room3 = new Room();
-        this.room1 = new Room("Hospital");
-        this.room2 = new Room("SDU");
-        this.room4 = new Room("Securitas");
-        this.room5 = new Room("Bathesda");
+        this.room1 = new Room("soveværelse");
+        this.room2 = new Room("Køkken");
+        this.room4 = new Room("Gang");
+        this.room5 = new Room("Kælder");
         this.rooms.add(room1);
         this.rooms.add(room2);
         this.rooms.add(room3);

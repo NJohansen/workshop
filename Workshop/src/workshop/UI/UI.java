@@ -19,18 +19,21 @@ import workshop.acqaintance.IUI;
  * @author niclasjohansen
  */
 public class UI extends Application implements IUI {
-    private static IBusiness business;
+    static IBusiness business;
     
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("FXML.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("FXML.fxml"));
+        Parent root = loader.load();
         
+        FXMLController controller = loader.getController();
         
         Scene scene = new Scene(root);
         
         primaryStage.setTitle("Sensor system");
         primaryStage.setScene(scene);
         primaryStage.show();
+        
     }
     
     @Override

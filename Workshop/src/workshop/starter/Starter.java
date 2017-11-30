@@ -20,5 +20,6 @@ public class Starter {
         IUI ui = new UI();
         ui.injectBusiness(business);
         ui.startApplication(args);
+        
     }
 }

@@ -13,28 +13,36 @@ import workshop.acqaintance.IBusiness;
  * @author niclasjohansen
  */
 public class BusinessFacade implements IBusiness {
+
     private BuildingManager buildingManager;
     private Building building;
-    
+
     /*
     * No-arg constructior
-    */
-    public BusinessFacade(){
-        buildingManager = new BuildingManager();
-    }
+     */
     
+    public BusinessFacade() {
+        this.buildingManager = buildingManager;
+    }
+
     @Override
-    public ArrayList<String> getRoomNames(){
-        return building.getRoomNames();
+    public ArrayList<String> getRoomNames() {
+        return buildingManager.building.getRoomNames();
     }
 
     @Override
     public void addBuilding() {
         buildingManager.addBuilding();
+
+    }
+    @Override
+    public void BuildingManager() {
+        this.buildingManager = new BuildingManager();
     }
 
     @Override
-    public void BuildingManager() {
-        buildingManager=new BuildingManager();
+    public ArrayList<String> getBuildings() {
+        return buildingManager.getBuildingsNames();
     }
+    
 }
